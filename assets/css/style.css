@@ -9,11 +9,27 @@
     
     --font-serif: "Playfair Display", serif;
     --font-sans: "Inter", sans-serif;
-    
-    --max-width: 800px;
+
+    --max-width: 850px;
     --spacing-lg: 4rem;
     --spacing-md: 2rem;
     --spacing-sm: 1rem;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/playfair-display.woff2') format('truetype');
+    font-weight: 400 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter.woff2') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -96,8 +112,8 @@ h2 {
 .summary {
     font-size: 1.1rem;
     color: var(--text-secondary);
-    max-width: 65ch;
     margin-bottom: var(--spacing-lg);
+    text-wrap: pretty;
 }
 
 /* Sections */
@@ -120,6 +136,7 @@ section {
 .item.current-job {
     border-left: 3px solid var(--accent-color);
     padding-left: calc(var(--spacing-sm) + 8px);
+    margin-left: -11px; /* Compensa el borde (3px) y el padding extra (8px) */
 }
 
 .item-header {
