@@ -2,10 +2,10 @@
   "basics": {
     "name": "Juan David González Bedoya",
     "label": "Sr Software Engineer",
-    "image": "",
-    "email": "",
+    "image": "assets/images/profile.jpg",
+    "email": "jdgonzalez907@gmail.com",
     "phone": "",
-    "url": "https://www.linkedin.com/in/jdgonzalezb/",
+    "url": "https://www.linkedin.com/in/jdgonzalez907/",
     "summary": "I am passionate about building software from architecture to development and maintenance. I am constantly learning and evolving, focused on developing quality software that generates real value for the business by participating in decision making. I prefer clean architectures (mainly DDD) and event-driven architectures (EDA), functional, object-oriented and asynchronous programming.",
     "location": {
       "city": "Medellín",
@@ -15,8 +15,8 @@
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "jdgonzalezb",
-        "url": "https://www.linkedin.com/in/jdgonzalezb/"
+        "username": "jdgonzalez907",
+        "url": "https://www.linkedin.com/in/jdgonzalez907/"
       }
     ]
   },

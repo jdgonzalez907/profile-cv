@@ -49,6 +49,16 @@ main {
     padding: var(--spacing-lg) var(--spacing-md);
 }
 
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: var(--spacing-md);
+    border: 2px solid var(--accent-color);
+    padding: 4px;
+}
+
 /* Typography */
 h1 {
     font-family: var(--font-serif);
@@ -71,9 +81,16 @@ h2 {
     font-size: 1.25rem;
     color: var(--accent-color);
     font-weight: 500;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+}
+
+.location {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+    font-weight: 400;
 }
 
 .summary {
@@ -97,6 +114,12 @@ section {
 .item {
     position: relative;
     padding-left: var(--spacing-sm);
+    transition: transform 0.2s ease;
+}
+
+.item.current-job {
+    border-left: 3px solid var(--accent-color);
+    padding-left: calc(var(--spacing-sm) + 8px);
 }
 
 .item-header {
