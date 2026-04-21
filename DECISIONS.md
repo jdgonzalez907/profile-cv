@@ -15,5 +15,6 @@
 
 ## 3. Infrastructure & Deployment
 - **VCS:** Git.
+- **Containerization:** Docker (Nginx Alpine).
 - **Environment:** Self-hosted VPS with Cloudflare Tunnels.
 - **Build Process:** No build step required (native ESM).
