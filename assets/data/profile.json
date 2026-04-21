@@ -1,0 +1,112 @@
+{
+  "basics": {
+    "name": "Juan David González Bedoya",
+    "label": "Sr Software Engineer",
+    "image": "",
+    "email": "",
+    "phone": "",
+    "url": "https://www.linkedin.com/in/jdgonzalezb/",
+    "summary": "I am passionate about building software from architecture to development and maintenance. I am constantly learning and evolving, focused on developing quality software that generates real value for the business by participating in decision making. I prefer clean architectures (mainly DDD) and event-driven architectures (EDA), functional, object-oriented and asynchronous programming.",
+    "location": {
+      "city": "Medellín",
+      "countryCode": "CO",
+      "region": "Antioquia"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "jdgonzalezb",
+        "url": "https://www.linkedin.com/in/jdgonzalezb/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Mercado Libre",
+      "position": "Sr Software Engineer",
+      "startDate": "2023-04-01",
+      "summary": "Working on high-scale systems at Mercado Libre.",
+      "highlights": []
+    },
+    {
+      "name": "Aptuno",
+      "position": "Software Engineer",
+      "startDate": "2021-12-01",
+      "endDate": "2023-02-01",
+      "summary": "Propose, analyze, design and build software that generates business value and enhances the digitization of leasing in Colombia and Mexico.",
+      "highlights": [
+        "NodeJs", "TypeScript", "NestJs", "ReactJs", "NextJs", "Clean architecture", "DDD", "EDA", "CQRS", "GCP", "CI/CD"
+      ]
+    },
+    {
+      "name": "Seguros SURA",
+      "position": "Analista desarrollo de tecnología",
+      "startDate": "2019-12-01",
+      "endDate": "2021-12-01",
+      "summary": "Analyze and develop the WESURA project for the sale of insurance.",
+      "highlights": [
+        "Scala", "Play framework", "Angular", "Akka", "AWS Lambda", "ApiGateway", "DynamoDb", "PostgreSQL"
+      ]
+    },
+    {
+      "name": "I.A.S. Ingeniería, Aplicaciones y Software",
+      "position": "Desarrollador de software",
+      "startDate": "2019-04-01",
+      "endDate": "2019-12-01",
+      "summary": "Development of Suramericana's consulting and sales project.",
+      "highlights": [
+        "Scala", "Java", "Spring", "Play Framework", "RabbitMQ"
+      ]
+    },
+    {
+      "name": "Emtelco",
+      "position": "Analista de aplicaciones senior",
+      "startDate": "2018-01-01",
+      "endDate": "2019-03-01",
+      "summary": "Work planning and performance evaluation systems.",
+      "highlights": [
+        "Python", "Django", "Quasar", "Vue JS", "MySQL"
+      ]
+    },
+    {
+      "name": "Universidad de San Buenaventura Medellín",
+      "position": "Analista de sistemas",
+      "startDate": "2016-04-01",
+      "endDate": "2017-12-01",
+      "summary": "Architecture design and maintenance of academic systems.",
+      "highlights": [
+        "PHP", "Oracle", "PL/SQL", "C#", "MVC 5"
+      ]
+    },
+    {
+      "name": "Smart Solutions",
+      "position": "Consultor",
+      "startDate": "2015-05-01",
+      "endDate": "2016-03-01",
+      "summary": "Commission systems for SMEs.",
+      "highlights": [
+        "Oracle", "PL/SQL", "PHP", "Yii"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Primer puesto Codigotón",
+      "date": "2021-10-22",
+      "awarder": "Bancolombia",
+      "summary": "Winner among 350 participants in the international Bintec fair."
+    },
+    {
+      "title": "Primer puesto SENASOFT",
+      "date": "2014-01-01",
+      "awarder": "SENA",
+      "summary": "Skills competition at national level (PHP category)."
+    },
+    {
+      "title": "Empleado del mes",
+      "date": "2019-01-01",
+      "awarder": "Emtelco",
+      "summary": "Recognition for commitment and responsibility."
+    }
+  ]
+}
