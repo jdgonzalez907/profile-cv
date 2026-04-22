@@ -40,7 +40,3 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-      # Este paso le "toca la puerta" a tu Dokploy para que actualice
-      - name: Notificar despliegue a Dokploy (Webhook)
-        run: |
-          curl -X POST "${{ secrets.DOKPLOY_WEBHOOK_URL }}"
