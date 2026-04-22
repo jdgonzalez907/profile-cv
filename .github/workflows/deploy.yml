@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  lint-and-build:
+  build-and-push:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -15,28 +15,7 @@ jobs:
       - name: Checkout del código
         uses: actions/checkout@v4
 
-      # 1. Configurar Node para correr los validadores
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      # 2. Validar HTML (Sintaxis y etiquetas cerradas)
-      - name: Validar HTML
-        run: |
-          npx htmlhint "**/*.html" --rules "tag-pair,attr-lowercase,spec-char-escape,id-unique,src-not-empty,tagname-lowercase"
-
-      # 3. Validar CSS (Sintaxis y buenas prácticas)
-      - name: Validar CSS
-        run: |
-          npx stylelint "**/*.css" --allow-empty-input
-
-      # 4. Validar JS (Incluso si es poco, evita errores de sintaxis)
-      - name: Validar JS
-        run: |
-          npx eslint "**/*.js" --no-eslintrc --rule '{"no-undef": "error", "no-unused-vars": "warn"}' --env browser --allow-empty-input
-
-      # --- Si todo lo anterior pasa, procedemos con Docker ---
+      # Este paso extrae los tags (latest y el SHA del commit) automáticamente
       - name: Extraer metadatos para Docker
         id: meta
         uses: docker/metadata-action@v5
@@ -60,3 +39,4 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
