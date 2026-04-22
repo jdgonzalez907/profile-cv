@@ -241,11 +241,31 @@ footer {
   color: var(--text-primary);
   text-decoration: none;
   margin: 0 0.5rem;
+  position: relative; /* Necesario para anclar la línea */
   transition: color 0.2s;
+  padding-bottom: 2px;
+}
+
+/* La línea inicial (ancho 0) posicionada en el centro (left 50%) */
+#contact-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
 }
 
 #contact-links a:hover {
   color: var(--accent-color);
+}
+
+/* Al pasar el cursor, el ancho crece al 100% y se expande simétricamente desde el centro */
+#contact-links a:hover::after {
+  width: 100%;
 }
 
 #contact-links a:focus-visible {
