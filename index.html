@@ -23,27 +23,174 @@
 <body>
     <main id="app">
         <header class="hero">
-            <h1 id="name" class="loading-placeholder"></h1>
-            <p id="label" class="loading-placeholder"></p>
-            <div id="summary" class="summary"></div>
+            <img src="assets/images/profile.jpg" alt="Juan David González Bedoya" class="profile-photo">
+            <h1>Juan David González Bedoya</h1>
+            <p>Sr Software Engineer @ Mercado Libre</p>
+            <div class="summary">
+                I am passionate about building software from architecture to development and maintenance. I am constantly learning and evolving, focused on developing quality software that generates real value for the business by participating in decision making. I prefer clean architectures (mainly DDD) and event-driven architectures (EDA), functional, object-oriented and asynchronous programming.
+            </div>
+            <p class="location">Medellín, Antioquia</p>
         </header>
 
         <section id="experience-section">
             <h2>Experiencia</h2>
-            <div id="work" class="list-container"></div>
+            <div id="work" class="list-container">
+                <div class="item current-job">
+                    <div class="item-header">
+                        <span class="item-title">Sr Software Engineer</span>
+                        <span class="item-date">abr de 2023 — Presente</span>
+                    </div>
+                    <div class="item-org">Mercado Libre</div>
+                    <p class="item-summary">Working on high-scale systems at Mercado Libre.</p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Software Engineer</span>
+                        <span class="item-date">dic de 2021 — feb de 2023</span>
+                    </div>
+                    <div class="item-org">Aptuno</div>
+                    <p class="item-summary">Propose, analyze, design and build software that generates business value and enhances the digitization of leasing in Colombia and Mexico.</p>
+                    <ul class="highlights">
+                        <li class="highlight-tag">NodeJs</li>
+                        <li class="highlight-tag">TypeScript</li>
+                        <li class="highlight-tag">NestJs</li>
+                        <li class="highlight-tag">ReactJs</li>
+                        <li class="highlight-tag">NextJs</li>
+                        <li class="highlight-tag">Clean architecture</li>
+                        <li class="highlight-tag">DDD</li>
+                        <li class="highlight-tag">EDA</li>
+                        <li class="highlight-tag">CQRS</li>
+                        <li class="highlight-tag">GCP</li>
+                        <li class="highlight-tag">CI/CD</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Analista desarrollo de tecnología</span>
+                        <span class="item-date">dic de 2019 — dic de 2021</span>
+                    </div>
+                    <div class="item-org">Seguros SURA</div>
+                    <p class="item-summary">Analyze and develop the WESURA project for the sale of insurance.</p>
+                    <ul class="highlights">
+                        <li class="highlight-tag">Scala</li>
+                        <li class="highlight-tag">Play framework</li>
+                        <li class="highlight-tag">Angular</li>
+                        <li class="highlight-tag">Akka</li>
+                        <li class="highlight-tag">AWS Lambda</li>
+                        <li class="highlight-tag">ApiGateway</li>
+                        <li class="highlight-tag">DynamoDb</li>
+                        <li class="highlight-tag">PostgreSQL</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Desarrollador de software</span>
+                        <span class="item-date">abr de 2019 — dic de 2019</span>
+                    </div>
+                    <div class="item-org">I.A.S. Ingeniería, Aplicaciones y Software</div>
+                    <p class="item-summary">Development of Suramericana's consulting and sales project.</p>
+                    <ul class="highlights">
+                        <li class="highlight-tag">Scala</li>
+                        <li class="highlight-tag">Java</li>
+                        <li class="highlight-tag">Spring</li>
+                        <li class="highlight-tag">Play Framework</li>
+                        <li class="highlight-tag">RabbitMQ</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Analista de aplicaciones senior</span>
+                        <span class="item-date">ene de 2018 — mar de 2019</span>
+                    </div>
+                    <div class="item-org">Emtelco</div>
+                    <p class="item-summary">Work planning and performance evaluation systems.</p>
+                    <ul class="highlights">
+                        <li class="highlight-tag">Python</li>
+                        <li class="highlight-tag">Django</li>
+                        <li class="highlight-tag">Quasar</li>
+                        <li class="highlight-tag">Vue JS</li>
+                        <li class="highlight-tag">MySQL</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Analista de sistemas</span>
+                        <span class="item-date">abr de 2016 — dic de 2017</span>
+                    </div>
+                    <div class="item-org">Universidad de San Buenaventura Medellín</div>
+                    <p class="item-summary">Architecture design and maintenance of academic systems.</p>
+                    <ul class="highlights">
+                        <li class="highlight-tag">PHP</li>
+                        <li class="highlight-tag">Oracle</li>
+                        <li class="highlight-tag">PL/SQL</li>
+                        <li class="highlight-tag">C#</li>
+                        <li class="highlight-tag">MVC 5</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Consultor</span>
+                        <span class="item-date">may de 2015 — mar de 2016</span>
+                    </div>
+                    <div class="item-org">Smart Solutions</div>
+                    <p class="item-summary">Commission systems for SMEs.</p>
+                    <ul class="highlights">
+                        <li class="highlight-tag">Oracle</li>
+                        <li class="highlight-tag">PL/SQL</li>
+                        <li class="highlight-tag">PHP</li>
+                        <li class="highlight-tag">Yii</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="awards-section">
             <h2>Premios y Reconocimientos</h2>
-            <div id="awards" class="list-container"></div>
+            <div id="awards" class="list-container">
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Primer puesto Codigotón</span>
+                        <span class="item-date">oct de 2021</span>
+                    </div>
+                    <div class="item-org">Bancolombia</div>
+                    <p class="item-summary">Winner among 350 participants in the international Bintec fair.</p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Primer puesto SENASOFT</span>
+                        <span class="item-date">2014</span>
+                    </div>
+                    <div class="item-org">SENA</div>
+                    <p class="item-summary">Skills competition at national level (PHP category).</p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Empleado del mes</span>
+                        <span class="item-date">ene de 2019</span>
+                    </div>
+                    <div class="item-org">Emtelco</div>
+                    <p class="item-summary">Recognition for commitment and responsibility.</p>
+                </div>
+            </div>
         </section>
 
         <footer>
-            <div id="contact-links"></div>
+            <div id="contact-links">
+                <a href="https://www.linkedin.com/in/jdgonzalezb/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:jdgonzalez907@gmail.com">Email</a>
+            </div>
             <p>&copy; <span id="year"></span> Juan David González Bedoya</p>
         </footer>
     </main>
 
-    <script type="module" src="assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
