@@ -1,41 +1,41 @@
-# Perfil Profesional - Juan David González Bedoya
+# Professional Profile - Juan David González Bedoya
 
-Este repositorio contiene el código fuente de mi página de perfil profesional estática. El proyecto está diseñado para ser extremadamente ligero, rápido, SEO-friendly y 100% autónomo (sin dependencias de terceros como Google Fonts o librerías pesadas).
+This repository contains the source code for my static professional profile page. The project is designed to be extremely lightweight, fast, SEO-friendly, and 100% autonomous (no third-party dependencies like Google Fonts or heavy libraries).
 
-## Arquitectura Base
+## Core Architecture
 
-- **HTML5 Semántico:** Toda la información (historial, premios, etc.) vive en el `index.html`.
-- **CSS3 (Vanilla):** Estilos modulares en `assets/css/style.css` con soporte automático para modo claro/oscuro.
-- **Dockerizado:** Listo para ser desplegado en mi homelab (VPS) detrás de Cloudflare Tunnels usando Nginx Alpine.
+- **Semantic HTML5:** All information (work history, awards, etc.) lives directly in `index.html`.
+- **CSS3 (Vanilla):** Modular styles in `assets/css/style.css` with automatic support for light/dark mode.
+- **Dockerized:** Ready to be deployed in my homelab (VPS) behind Cloudflare Tunnels using Nginx Alpine.
 
-## Desarrollo Local
+## Local Development
 
-Para previsualizar cambios localmente sin problemas de CORS (especialmente por la carga de fuentes locales):
+To preview changes locally without CORS issues (especially due to loading local fonts):
 
-1. Navegar a la raíz del proyecto.
-2. Levantar un servidor estático usando Python:
+1. Navigate to the project root.
+2. Start a static server using Python:
    ```bash
    python3 -m http.server 8000
    ```
-3. Abrir `http://localhost:8000` en el navegador.
+3. Open `http://localhost:8000` in your browser.
 
-## Actualización de Contenido (Mantenimiento)
+## Content Updates (Maintenance)
 
-La página está construida para iterar rápidamente modificando el archivo `index.html`. Para detalles exactos de cómo añadir nuevos bloques de experiencia o premios sin romper el diseño, consultar la guía de iteración en **`DECISIONS.md`**.
+The page is built for rapid iteration by modifying the `index.html` file. For exact details on how to add new experience blocks or awards without breaking the design, consult the iteration guide in **`DECISIONS.md`**.
 
-## Despliegue (Producción)
+## Deployment (Production)
 
-El proyecto se despliega empaquetado en un contenedor Docker muy ligero basado en Nginx.
+The project is deployed packaged in a very lightweight Docker container based on Nginx.
 
-1. Construir la imagen:
+1. Build the image:
    ```bash
    docker build -t profile-cv .
    ```
 
-2. Ejecutar el contenedor (ajustar el puerto expuesto según la configuración del servidor/tunnel):
+2. Run the container (adjust the exposed port according to the server/tunnel configuration):
    ```bash
    docker run -d -p 8080:80 --name jdgonzalez-profile profile-cv
    ```
 
 ---
-*Repositorio personal. No diseñado como template público.*
+*Personal repository. Not intended as a public template.*
