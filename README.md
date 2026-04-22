@@ -1,67 +1,41 @@
-# Minimalist Professional Profile
+# Perfil Profesional - Juan David González Bedoya
 
-A blazing-fast, SEO-optimized, and elegant single-page professional profile. Designed for Software Engineers who prefer simplicity, performance, and complete ownership of their data.
+Este repositorio contiene el código fuente de mi página de perfil profesional estática. El proyecto está diseñado para ser extremadamente ligero, rápido, SEO-friendly y 100% autónomo (sin dependencias de terceros como Google Fonts o librerías pesadas).
 
-## Features
+## Arquitectura Base
 
-- **Zero Dependencies:** Built with semantic HTML5, CSS3 (Custom Properties), and minimal Vanilla JavaScript. No heavy frameworks (React, Angular, etc.).
-- **SEO & Social Ready:** Fully equipped with Open Graph tags and meta descriptions for perfect previews on LinkedIn, Twitter, and search engines.
-- **Auto Dark/Light Mode:** Automatically adapts to the user's system preferences (`prefers-color-scheme`).
-- **100% Autonomous:** All assets, including high-quality typography (Playfair Display & Inter), are served locally. No tracking or reliance on Google Fonts.
-- **Accessible (a11y):** Implements ARIA landmarks and keyboard navigation focus states.
-- **Dockerized:** Ready to be deployed anywhere using a lightweight Nginx Alpine container.
+- **HTML5 Semántico:** Toda la información (historial, premios, etc.) vive en el `index.html`.
+- **CSS3 (Vanilla):** Estilos modulares en `assets/css/style.css` con soporte automático para modo claro/oscuro.
+- **Dockerizado:** Listo para ser desplegado en mi homelab (VPS) detrás de Cloudflare Tunnels usando Nginx Alpine.
 
-## Project Structure
+## Desarrollo Local
 
-```text
-.
-├── index.html          # Main entry point and data source (Semantic HTML)
-├── Dockerfile          # Nginx Alpine configuration for deployment
-├── DECISIONS.md        # Architecture decisions and maintenance guide
-└── assets/
-    ├── css/style.css   # Modular styling and themes
-    ├── fonts/          # Local WOFF2 fonts
-    ├── images/         # Profile pictures
-    ├── icons/          # Multi-device favicons
-    └── js/app.js       # Minimal UI logic (dynamic footer year)
-```
+Para previsualizar cambios localmente sin problemas de CORS (especialmente por la carga de fuentes locales):
 
-## Local Development
+1. Navegar a la raíz del proyecto.
+2. Levantar un servidor estático usando Python:
+   ```bash
+   python3 -m http.server 8000
+   ```
+3. Abrir `http://localhost:8000` en el navegador.
 
-Since the project uses local modules and assets, it needs to be served via HTTP (not `file://`) to avoid CORS issues with fonts or future module expansions.
+## Actualización de Contenido (Mantenimiento)
 
-You can use any local static server. For example, using Python:
-```bash
-python3 -m http.server 8000
-```
-Or using Node.js:
-```bash
-npx serve .
-```
+La página está construida para iterar rápidamente modificando el archivo `index.html`. Para detalles exactos de cómo añadir nuevos bloques de experiencia o premios sin romper el diseño, consultar la guía de iteración en **`DECISIONS.md`**.
 
-Then, open `http://localhost:8000` (or the port provided) in your browser.
+## Despliegue (Producción)
 
-## Deployment (Docker)
+El proyecto se despliega empaquetado en un contenedor Docker muy ligero basado en Nginx.
 
-The project includes a `Dockerfile` tailored for a lightweight, production-ready Nginx server. It's ideal for self-hosting on a VPS or Homelab (e.g., behind Cloudflare Tunnels).
-
-1. **Build the image:**
+1. Construir la imagen:
    ```bash
    docker build -t profile-cv .
    ```
 
-2. **Run the container:**
+2. Ejecutar el contenedor (ajustar el puerto expuesto según la configuración del servidor/tunnel):
    ```bash
-   docker run -d -p 8080:80 --name my-profile profile-cv
+   docker run -d -p 8080:80 --name jdgonzalez-profile profile-cv
    ```
 
-The site will be available on port `8080` of your host machine.
-
-## Maintenance & Updates
-
-To update your work experience, awards, or profile description, simply edit the `index.html` file. The structure is designed to be easily copy-pasted.
-
-Please refer to the `DECISIONS.md` file for a detailed guide on how to iterate and maintain the content.
-
 ---
-*Crafted with precision and clean architecture principles.*
+*Repositorio personal. No diseñado como template público.*
