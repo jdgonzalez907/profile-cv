@@ -210,6 +210,12 @@ footer {
     color: var(--accent-color);
 }
 
+#contact-links a:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
 /* Loading State */
 .loading-placeholder {
     min-height: 1em;
