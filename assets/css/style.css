@@ -17,6 +17,17 @@
   --spacing-sm: 1rem;
 }
 
+@keyframes blur-animation {
+  from {
+    filter: blur(10px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
 @font-face {
   font-family: "Playfair Display";
   src: url("../fonts/playfair-display.woff2") format("woff2");
@@ -37,6 +48,7 @@
   :root {
     /* Theme: Midnight & Gold (Dark Mode) */
     --bg-color: #0f1113;
+    --strip-bg: #08090a;
     --text-primary: #e0e0e0;
     --text-secondary: #a0a0a0;
     --accent-color: #d4af37;
@@ -60,6 +72,7 @@ body {
     background-color 0.3s ease,
     color 0.3s ease;
   -webkit-font-smoothing: antialiased;
+  animation: blur-animation 0.5s ease-out forwards;
 }
 
 .container {
