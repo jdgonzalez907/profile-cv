@@ -47,16 +47,16 @@
     <link rel="stylesheet" href="assets/css/style.css?v=1.1">
     </head>
   <body>
-    <div id="app">
-      <div class="hero-wrapper">
-        <header class="hero container">
+    <div id="app" class="layout-wrapper">
+      <aside class="sidebar">
+        <header class="hero">
           <img
             src="assets/images/profile.jpg"
             alt="Juan David González Bedoya"
             class="profile-photo"
           />
           <h1>Juan David González Bedoya</h1>
-          <p>Sr Software Engineer @ Mercado Libre</p>
+          <p class="title">Sr Software Engineer @ Mercado Libre</p>
           <div class="summary">
             I am passionate about building software from architecture to
             development and maintenance. I am constantly learning and evolving,
@@ -66,10 +66,19 @@
             functional, object-oriented and asynchronous programming.
           </div>
           <p class="location">Medellín, Antioquia</p>
+          <nav id="contact-links" aria-label="Social media and contact">
+            <a
+              href="https://www.linkedin.com/in/jdgonzalez907/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a href="mailto:jdgonzalez907@gmail.com">Email</a>
+          </nav>
         </header>
-      </div>
+      </aside>
 
-      <main class="container">
+      <main class="main-content">
         <section id="experience-section" aria-labelledby="experience-title">
           <h2 id="experience-title">Experience</h2>
           <div id="work" class="list-container">
@@ -271,23 +280,11 @@
         </section>
 
         <footer>
-          <nav id="contact-links" aria-label="Social media and contact">
-            <a
-              href="https://www.linkedin.com/in/jdgonzalez907/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >LinkedIn</a
-            >
-            <a href="mailto:jdgonzalez907@gmail.com">Email</a>
-          </nav>
           <p>&copy; <span id="year"></span> Juan David González Bedoya</p>
         </footer>
       </main>
     </div>
 
     <script src="assets/js/app.js"></script>
-  </body>
-</html>
-app.js"></script>
   </body>
 </html>
