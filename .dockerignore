@@ -1,7 +1,8 @@
 .git
 .gitignore
+.github
 Dockerfile
-DECISIONS.md
+*.md
 .DS_Store
 assets/.DS_Store
 node_modules
