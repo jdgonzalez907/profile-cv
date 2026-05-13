@@ -1,15 +1,15 @@
 :root {
-  /* Theme: Bone & Slate (Light Mode) */
-  --bg-color: #fcfaf8;
-  --strip-bg: #f5f2ee;
-  --text-primary: #1a1a1a;
-  --text-secondary: #4a4a4a;
-  --accent-color: #8c7851;
-  --border-color: #e0d9d1;
-  --card-bg: #ffffff;
+  /* Theme: Hacker / Programmer */
+  --bg-color: #0d1117;
+  --strip-bg: #161b22;
+  --text-primary: #c9d1d9;
+  --text-secondary: #8b949e;
+  --accent-color: #39d353; /* Verde neón brillante */
+  --border-color: #30363d;
+  --card-bg: #21262d;
 
-  --font-serif: "Playfair Display", serif;
-  --font-sans: "Inter", sans-serif;
+  --font-serif: "Fira Code", monospace;
+  --font-sans: "Fira Code", monospace;
 
   --max-width: 850px;
   --spacing-lg: 4rem;
@@ -34,49 +34,6 @@
   font-weight: 400 700;
   font-style: normal;
   font-display: swap;
-}
-
-:root.theme-programmer {
-  /* Theme: Hacker / Programmer */
-  --bg-color: #0d1117;
-  --strip-bg: #161b22;
-  --text-primary: #c9d1d9;
-  --text-secondary: #8b949e;
-  --accent-color: #39d353; /* Verde neón brillante */
-  --border-color: #30363d;
-  --card-bg: #21262d;
-
-  --font-serif: "Fira Code", monospace;
-  --font-sans: "Fira Code", monospace;
-}
-
-@font-face {
-  font-family: "Playfair Display";
-  src: url("../fonts/playfair-display.woff2") format("woff2");
-  font-weight: 400 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter.woff2") format("truetype");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Theme: Midnight & Gold (Dark Mode) */
-    --bg-color: #0f1113;
-    --strip-bg: #08090a;
-    --text-primary: #e0e0e0;
-    --text-secondary: #a0a0a0;
-    --accent-color: #d4af37;
-    --border-color: #2d3135;
-    --card-bg: #161a1d;
-  }
 }
 
 * {

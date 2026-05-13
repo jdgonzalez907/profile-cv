@@ -11,7 +11,7 @@
   - `assets/icons/`: Set completo de favicons.
 
 ## 2. Design & UX
-- **Theme:** Detección automática de Light/Dark mode vía CSS.
+- **Theme:** Single 'Programmer' theme (Dark Mode by default).
 - **Performance:** Carga instantánea (sin dependencias externas).
 - **Autonomía:** Fuentes y recursos servidos localmente para independencia de Google Fonts.
 
