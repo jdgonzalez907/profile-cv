@@ -1,11 +1,29 @@
-# Usar una imagen ligera de Nginx
+# Build stage
+FROM node:20-alpine AS build
+
+# Install pnpm
+RUN npm install -g pnpm
+
+WORKDIR /app
+
+# Copy package files
+COPY pnpm-lock.yaml* package.json ./
+
+# Install dependencies
+RUN pnpm install
+
+# Copy source files
+COPY . .
+
+# Build the project
+RUN pnpm build
+
+# Production stage
 FROM nginx:alpine
 
-# Copiar los archivos del proyecto al directorio que Nginx usa para servir contenido
-COPY . /usr/share/nginx/html
+# Copy built files from build stage
+COPY --from=build /app/dist /usr/share/nginx/html
 
-# Exponer el puerto 80
 EXPOSE 80
 
-# Comando para ejecutar Nginx
 CMD ["nginx", "-g", "daemon off;"]
